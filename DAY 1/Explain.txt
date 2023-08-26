@@ -1,0 +1,45 @@
+Create Web Page
+        Structure Building ==> HTML (v5) older (HTML 4 & XHTML)
+        Create a Design ==> CSS
+        Create Interactive UI => JavaScript
+
+
+        HTML => Hyper Text Markup Lang
+        HTML => Syntax is a s bellow
+        Markup 
+            <NameOfMarkup> ==> Open Tag
+            </NameOfMarkup> ==> Close Tag
+            <NameOfMarkup /> ==> Self Closing
+
+
+            <NameOfMarkup> data </NameOfMarkup> ==> Element
+
+             <NameOfMarkup data /> ==> Element
+
+    Basic HTML Structure
+        html => root element (parent)
+            head ==> Store Information
+            body ==> Display   data
+
+
+    HTML elements / tag
+
+    comments ==> hint for development
+        <!-- comment text -->
+
+
+    if element don't break a line => inline element
+    if element breaks a line each time => block element
+
+    rule of using element in element =>
+        <p> in side <p>
+        don't use any <heading> element in <p> element
+        don't use any <p> element in <heading> element
+
+        button
+        add images
+        create list
+
+    use image (img)
+        we can use external link
+        we can use a internal link
