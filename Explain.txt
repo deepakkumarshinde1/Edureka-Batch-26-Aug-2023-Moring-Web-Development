@@ -43,3 +43,52 @@ Create Web Page
     use image (img)
         we can use external link
         we can use a internal link
+
+
+
+------------------------------- AWS
+ S3 (Simple Static Storage)
+    make those file work like a website
+    share Static like css, javascript, images , videos , audios
+
+
+
+----------------------------
+create a bucket
+upload all files
+set a bucket as static website (enable)
+set a bucket public and also we add a script 
+
+add this policy
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowPublicReadAccess",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::bucket-name/*"
+        }
+    ]
+}
+
+
+upload your project total free
+
+https://www.netlify.com:8080/get-my-file/index.html
+
+https => protocol
+www.netlify.com ==> domain
+8080 => port number (optional)
+get-my-file => path (optional)
+index.html => file name (optional)
+
+--------------------forms
+input [type , placeholder, checked, disabled value, required]
+    type
+        text
+        password
+        checkbox
+        number
