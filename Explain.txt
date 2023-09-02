@@ -1,5 +1,9 @@
 https://github.com/deepakkumarshinde1/Edureka-Batch-26-Aug-2023-Moring-Web-Development
 
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+https://xmind.app/m/NcQcMZ
+
 Create Web Page
         Structure Building ==> HTML (v5) older (HTML 4 & XHTML)
         Create a Design ==> CSS
@@ -94,3 +98,10 @@ input [type , placeholder, checked, disabled value, required]
         password
         checkbox
         number
+
+
+------------------ CSS -------------------------
+CSS Cascading Style Sheet
+CSS 3
+Design a ui for browser (Design Web Page)
+

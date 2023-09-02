@@ -1,0 +1,51 @@
+/* Selector 
+    element selector ==> h1 span div  header
+    id selector => #idName
+    class selector => .className
+    group selector => h1,span,#id,.class{ }
+    universal selector => *{ } (default)
+
+    id
+        id's are unique in nature
+        only one id name must used for working for one element
+    
+    class
+        same class can be use in different element 
+        we can have multiple combination of class
+        classes are reusable in nature       
+*/
+
+/* h1 {
+  color: red;
+  background-color: yellow;
+} */
+
+#h1-text {
+  color: red;
+  background-color: yellow;
+}
+
+#my-id {
+  color: green;
+}
+
+.text-red {
+  color: red;
+}
+.bg-yellow {
+  background-color: yellow;
+}
+
+.text-magenta {
+  color: magenta;
+}
+
+.text-green {
+  color: green;
+}
+.text-blue {
+  color: blue;
+}
+.text-brown {
+  color: brown;
+}
