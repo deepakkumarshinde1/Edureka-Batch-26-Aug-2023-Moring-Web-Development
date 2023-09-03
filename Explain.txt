@@ -105,3 +105,15 @@ CSS Cascading Style Sheet
 CSS 3
 Design a ui for browser (Design Web Page)
 
+----------------  Flex box -----------------------
+
+Parent (container / flex-container)
+    has a control over child 
+    display
+    flex-direction
+    flex-warp
+    justify-content
+    align-items
+    align-content
+  
+Child (flex-item)

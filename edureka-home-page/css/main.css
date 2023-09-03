@@ -6,9 +6,154 @@
   box-sizing: border-box;
 }
 
+body {
+  /* apply a font to page */
+  /* local fonts */
+  font-family: Arial, Helvetica, sans-serif;
+  height: 200vh;
+}
+
 .new-offer {
   background-color: #192f60; /* hex code red(1 9) green(2 f) blue(6 0)*/
   /* 0 1 2 3 4  5 6 7 8 9 A B C D E F */
   color: white;
   padding: 12px 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+  color: white;
+}
+
+.bg-magenta {
+  background-color: magenta;
+}
+
+.bg-brown {
+  background-color: brown;
+}
+
+.offer-text-color {
+  color: #ffd381;
+}
+.text-white {
+  color: white;
+}
+.text-blue {
+  color: #0052cc;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.main-header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* child selector */
+.main-header-left > * {
+  margin: 0px 20px;
+}
+.header-Category {
+  border: 1px solid #0052cc;
+  padding: 12px 24px;
+  color: #0052cc;
+
+  /* round corners */
+  border-radius: 5px;
+
+  /* change cursor */
+  cursor: pointer;
+}
+
+/* when we take mouse on element i.e hover */
+.header-Category:hover {
+  background-color: #0052cc;
+  color: white;
+}
+
+.header-search-course {
+  border: 1px solid #f4f5f7;
+  background-color: #f4f5f7;
+  padding: 12px 30px;
+  padding-right: 70px;
+  border-radius: 40px;
+  color: #5a6484;
+}
+
+.header-menu {
+  /* ul bullets */
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-menu > li {
+  margin: 0px 15px;
+  color: #192f60;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+.header-menu > li:hover:last-child {
+  background-color: transparent;
+}
+
+.header-menu > li:last-child {
+  margin: 0px;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.header-menu > li:hover {
+  background-color: #f4f5f7;
+}
+
+.header-menu > li > button {
+  background-color: transparent;
+  border: 1px solid #192f60;
+  border-radius: 3px;
+  padding: 10px 12px;
+}
+
+.brand-image {
+  width: 150px;
+}
+
+.position-learn {
+  /* position: static; */
+
+  /* 
+  static 
+  relative 
+  absolute 
+  fixed 
+  sticky
+  */
+  position: fixed;
+  background-color: #808080d5;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 50%;
+  height: 50vh;
+  background-color: white;
+  overflow: hidden;
+  padding: 20px;
 }

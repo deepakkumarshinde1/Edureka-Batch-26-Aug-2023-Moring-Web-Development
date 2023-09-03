@@ -1,0 +1,98 @@
+/* *{} i.e universal selector apply given css to all element */
+/* universal selector mut be on very top of page */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.new-offer {
+  background-color: #192f60; /* hex code red(1 9) green(2 f) blue(6 0)*/
+  /* 0 1 2 3 4  5 6 7 8 9 A B C D E F */
+  color: white;
+  padding: 12px 45px;
+}
+
+/* .parent {
+  border: 1px solid red;
+  width: 50%; /*250px
+}
+.child {
+  border: 1px solid black;
+  width: 50%; /*125px
+  background-color: red;
+  height: 20vh;
+}
+
+.child-2 {
+  border: 1px solid black;
+  height: 20vh;
+  background-color: green;
+  width: 50vw; /*250px
+} */
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+  color: white;
+}
+
+.bg-magenta {
+  background-color: magenta;
+}
+
+.bg-brown {
+  background-color: brown;
+}
+
+.flex-container {
+  border: 1px solid black;
+  /* height: 50vh; */
+  display: flex;
+  flex-direction: row;
+  /* row(default) column*/
+  /* move there element horizontally */
+  justify-content: flex-start;
+  /* flex-start center flex-end space-between
+   space-around space-evenly*/
+
+  /* move there element vertically */
+  align-items: stretch;
+  /*  flex-end center flex-start*/
+  /* flex-wrap: wrap; */
+}
+/* 100% */
+.flex-item {
+  border: 1px solid black;
+  /* min-height: 20vh; */
+  width: 20%;
+  margin: 0px 10px;
+
+  /*  */
+  display: flex;
+  justify-content: center; /*horizontal*/
+  align-items: flex-start;
+
+  overflow: auto;
+}
+
+/* if we want to target 1st element*/
+/* .flex-item:nth-child(1) {
+  margin-left: 0px;
+} */
+
+/* pseudo class */
+.flex-item:first-child {
+  margin-left: 0px;
+}
+
+/* .flex-item:nth-child(4) {
+  margin-right: 0px;
+} */
+
+.flex-item:last-child {
+  margin-right: 0px;
+}
