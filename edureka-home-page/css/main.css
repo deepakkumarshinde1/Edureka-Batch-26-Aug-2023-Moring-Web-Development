@@ -148,6 +148,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* hide */
+  display: none;
 }
 
 .box {
@@ -156,4 +159,75 @@ body {
   background-color: white;
   overflow: hidden;
   padding: 20px;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.trending-course {
+  display: flex;
+  justify-content: center;
+}
+
+.trending-course-training {
+  width: 30%;
+  /* border: 1px solid black; */
+  margin: 0 20px;
+  position: relative;
+  top: -50px;
+  background-color: white;
+  padding: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* works the text transform */
+  text-transform: uppercase;
+
+  /* shadow */
+  box-shadow: 0px 0px 5px 0px gray;
+  /* x-axis y-axis blur scale color  */
+
+  border-radius: 5px;
+
+  /* add animation  */
+  transition-property: transform, background-color;
+  transition-duration: 5s, 0.5s;
+
+  transform-style: preserve-3d;
+}
+.trending-course-training:hover {
+  /* zoom effect */
+  /* transform: scale(1.05); */
+
+  /* move effect (left/right/bottom/top) */
+  /* transform: translateX(30px); */
+  /* transform: translateY(-20px); */
+
+  /* rotation-effect */
+  transform: perspective(300px) rotateY(75deg);
+
+  /*  mix effect */
+  /* transform: scale(1.1) rotateZ(10deg); */
+  background-color: lightgreen;
+}
+
+.trending-course-training-link a {
+  color: #0052cc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.trending-course-training-title {
+  transform-style: preserve-3d;
+}
+
+.trending-course-training-title p {
+  transform: translateZ(20px);
+}
+
+.trending-course-training-title h4 {
+  transform: translateZ(30px);
 }
