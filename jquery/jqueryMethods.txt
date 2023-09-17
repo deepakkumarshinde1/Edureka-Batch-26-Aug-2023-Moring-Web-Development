@@ -1,0 +1,10 @@
+$(function(){
+
+})
+
+$('selector').method()
+
+methods
+    html() --> get and set html data in element
+    on('event',cbFn) --> use to add a event
+    val() --> get and set the input data

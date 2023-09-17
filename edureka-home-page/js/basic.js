@@ -1,108 +1,93 @@
-let studentName = "Deepakkumar"; // string
-let studentBatchNo = 123; // number
-let studentMarks = 50.6; // number
-let studentAttendanceStatus = true; // boolean
-let studentMobile = null; // object
-let studentParentMobile; // undefined
+let h1Text = document.querySelector("#text");
+let button = document.querySelector("#change-text");
+let inputText = document.querySelector(".input-text");
+let tbody = document.querySelector("#tbody");
 
-// object --> array , jsObject , null , function
+// element or null
+// console.log(h1Text);
 
-// check the data type
+/// get inner data of element; ===> .innerHTML
+// console.log(h1Text.innerHTML);
 
-console.log(typeof studentName);
-console.log(typeof studentBatchNo);
-console.log(typeof studentMarks);
-console.log(typeof studentAttendanceStatus);
-console.log(typeof studentMobile);
-console.log(typeof studentParentMobile);
-studentMobile === null;
+// set data from javascript to html element ==> .innerHTML
+// h1Text.innerHTML = "Welcome to edureka";
 
-// function fun() {}
+// on button click we want to change text
+// event
+// event  user interaction
+// keyboard and mouse
+// addEventListener
 
-// let number = 30;
-// // even or odd;
-// let result = null;
+button.addEventListener("click", function () {
+  // get value of input ==> .value
+  changeTextFun();
+});
 
-// if (number % 2 === 0) {
-//   result = "even";
-// } else {
-//   result = "odd";
-// }
+inputText.addEventListener("keyup", function (event) {
+  if (event.keyCode === 13) {
+    changeTextFun();
+  }
+});
 
-// console.log(result);
-//  arithmetic operators
-let a = 10;
-let b = 20;
-let result = a + b;
-result = a - b;
-result = a / b;
-result = a * b;
-result = a % b; // reminder of div before fraction
-// console.log(result);
+let list = [];
+function changeTextFun() {
+  let value = inputText.value;
 
-// inc / dec operators
-let a1 = 10;
-// a1++; post inc
-// ++a1; pre inc
-// a1--; post dec
-// --a1; pre dec
+  if (value === "") {
+    alert("Please enter some value to save");
+  } else {
+    // h1Text.innerHTML = value;
+    // save a data in array ==> push
 
-// console.log(a1++);
-// console.log(--a1);
-// console.log(a1);
+    let newStudent = {
+      name: value,
+    };
 
-// Assignment operators
-a1 += 5; // a1 = a1 + 5;
-a1 -= 5; // a1 = a1 - 5;
-a1 /= 5; // a1 = a1 / 5;
-a1 *= 5; // a1 = a1 * 5;
-a1 %= 5; // a1 = a1 * 5;
-console.log(a1);
+    list.push(newStudent); // [{...},{...},{...},{...}]
+    inputText.value = "";
 
-// compare operators
-let a2 = 31;
-let b2 = 30;
-let c2 = 30;
-// >  < === !== >= <=
+    // print data in table
 
-// check this all operations with conditions
-
-// conditional statement
-
-// logical operators
-// and --> &&
-// or --> ||
-// not --> !
-// if ... else
-// false || true ==> !(true) ==> false
-// false && true ==> !(false) ==> true
-if (!(a2 === b2 && b2 === c2)) {
-  // true block
-  console.log("Yes");
-} else {
-  // false block
-  console.log("No");
+    let newList = list.map(function (value, index) {
+      return `<tr>
+                <td>${index + 1}</td>
+                <td>${value.name}</td>
+             </tr>`;
+    });
+    // convert list to string
+    let htmlElements = newList.join("");
+    tbody.innerHTML = htmlElements;
+  }
 }
 
-// switch
-let userCourse = "JAVA FSD"; //; Javascript React MERN ;
+// // map --> re-create array
+// let array = [10, 20, 30, 40, 50];
+// // square of each value and store it in an new array
+// let newArray = array.map(function (value) {
+//   // return "<p>" + value * value + "</p>";
+//   return `<p>${value * value}</p>`;
+// });
+// //  convert array to string ==> join('')
+// let htmlElement = newArray.join("");
+// console.log(htmlElement);
 
-switch (userCourse) {
-  case "Javascript":
-    // code
-    console.log("You have selected a Javascript Course");
-    break;
+/*
 
-  case "React":
-    // code
-    console.log("You have selected a React Course");
-    break;
-  case "MERN":
-    // code
-    console.log("You have selected a MERN Course");
-    break;
 
-  default:
-    console.log("You have selected a invaid course");
-    break;
-}
+<table>
+  <tr>
+    <th id="name">Name</th>
+    <th id="email">Email</th>
+    <th id="phone">Phone</th>
+    <th id="addr">Address</th>
+  </tr>
+  <tr>
+    <td headers="name">John Doe</td>
+    <td headers="email">someone@example.com</td>
+    <td headers="phone">+45342323</td>
+    <td headers="addr">Rosevn 56,4300 Sandnes,Norway</td>
+  </tr>
+</table>
+
+
+*/

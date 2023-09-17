@@ -1,0 +1,48 @@
+body {
+  background-color: #f4f5f7;
+}
+.edu-text-pink {
+  color: pink !important;
+}
+
+.edu-bg-dark-blue {
+  background-color: #192f60 !important;
+}
+
+.edu-text-yellow-golden {
+  color: #ffd381 !important;
+}
+
+.edu-brand-icon {
+  width: 150px;
+}
+
+.edu-search {
+  width: 30vw;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.edu-pointer {
+  cursor: pointer !important;
+}
+
+.edu-course-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.edu-course-list > li {
+  box-shadow: 0 0 5px 0 #e4e2e2f3;
+  padding: 1rem 1.5rem;
+  font-size: 1.3rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* .main-menu > li:hover {
+  background-color: gray;
+  padding: 0.5rem;
+} */

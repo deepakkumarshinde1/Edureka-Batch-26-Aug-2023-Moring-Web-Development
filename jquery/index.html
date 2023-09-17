@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .set-center {
+        margin-top: 50vh;
+      }
+      .form-popup {
+        position: fixed;
+        background-color: white;
+        right: -425px;
+        top: 10%;
+        border: 1px solid black;
+      }
+      .AddButton {
+        position: absolute;
+        left: -80px;
+        top: 50%;
+        transform: rotateZ(270deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- work with forms -->
+    <section class="container-fluid">
+      <section class="row">
+        <section class="form-popup col-4 m-auto shadow-sm p-3 userForm">
+          <button class="AddButton">Add New Record</button>
+          <p class="fs-4 fw-bold text-center text-primary mb-0">User Form</p>
+          <form>
+            <div class="mb-3">
+              <label for="" class="form-label text-primary">User Name</label>
+              <input
+                type="text"
+                class="form-control reset"
+                placeholder="Enter full name"
+                id="userFullName"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label text-primary">Email</label>
+              <input
+                type="text"
+                class="form-control reset"
+                placeholder="Enter Email"
+                id="userEmail"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label text-primary">Mobile</label>
+              <input
+                type="text"
+                class="form-control reset"
+                placeholder="Enter Mobile"
+                id="userMobile"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label text-primary">Address</label>
+              <textarea
+                type="text"
+                class="form-control reset"
+                placeholder="Enter Address"
+                id="userAddress"
+              ></textarea>
+            </div>
+            <div class="mb-3 text-center">
+              <button type="button" class="btn btn-success" id="saveData">
+                Save
+              </button>
+              <button type="button" class="close btn btn-danger">Close</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="col-10 m-auto">
+          <table class="table table-bordered">
+            <thead class="table-success">
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Address</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </section>
+        <!-- <section>
+          <p class="d-none text-primary text-center thank-you display-6"></p>
+        </section> -->
+      </section>
+    </section>
+    <!-- js files -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+<!-- CSS + HTML  -->
+<!--  JS -->
