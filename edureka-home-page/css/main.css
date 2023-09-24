@@ -161,13 +161,19 @@ body {
   padding: 20px;
 }
 
-.slider img {
-  width: 100%;
+.slider .img {
+  height: 70vh;
+}
+.slider .img img {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .trending-course {
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .trending-course-training {
@@ -230,4 +236,105 @@ body {
 
 .trending-course-training-title h4 {
   transform: translateZ(30px);
+}
+
+.slider-1 {
+  width: 100%;
+  display: flex;
+}
+
+.slider-1 section {
+  /* width: 25%; */
+  border: 1px solid black;
+  height: 30vh;
+  margin: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#slide-1 .owl-dot span {
+  background-color: red !important;
+  border-radius: 0;
+  width: 100px;
+  border-radius: 10px;
+}
+
+#slide-1 .active span {
+  background: green !important;
+  box-shadow: 0 0 10px 0 green;
+  transform: scale(1.1);
+}
+
+#main-slider {
+  position: relative;
+}
+#main-slider .owl-dots {
+  position: absolute;
+  bottom: 0;
+}
+
+#main-slider .owl-dot span {
+  background-color: black !important;
+  border-radius: 0;
+  width: 35px;
+  border-radius: 10px;
+}
+
+#main-slider .active span {
+  background: white !important;
+  box-shadow: 0 0 10px 2px rgb(0, 13, 255);
+  transform: scale(1.1);
+}
+
+.main-carousel {
+  position: relative;
+}
+
+.main-carousel .main-carousel-nav-buttons {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+.main-carousel .main-carousel-nav-buttons button {
+  padding: 50px 10px;
+  font-size: 24px;
+  background-color: white;
+  border: none;
+  color: green;
+  cursor: pointer;
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  margin: 0 10px;
+}
+/* span */
+
+.main-carousel .main-carousel-nav-buttons button:hover {
+  box-shadow: 0 0 10px 0 black;
+}
+
+.user-reg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-reg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.user-reg button {
+  position: relative;
+  z-index: 3;
+  width: 300px;
+  padding: 30px 0;
+  cursor: pointer;
 }

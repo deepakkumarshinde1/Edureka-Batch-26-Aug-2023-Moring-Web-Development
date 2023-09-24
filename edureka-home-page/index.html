@@ -2,6 +2,19 @@
 <html>
   <head>
     <title>Edureka Home Page</title>
+    <!-- Owl Carousel  -->
+    <link
+      rel="stylesheet"
+      href="./js/owl_carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./js/owl_carousel/dist/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -41,8 +54,29 @@
         </ul>
       </nav>
     </header>
-    <section class="slider">
-      <img src="./images/banner.jpg" alt="" />
+    <section class="main-carousel">
+      <section id="main-slider" class="slider owl-carousel owl-theme">
+        <section class="img user-reg">
+          <button class="reg-now">Registered Now</button>
+          <img src="./images/1.jpg" alt="" />
+        </section>
+        <section class="img">
+          <img src="./images/2.png" alt="" />
+        </section>
+        <section class="img">
+          <img src="./images/3.png" alt="" />
+        </section>
+        <section class="img">
+          <img src="./images/4.png" alt="" />
+        </section>
+        <section class="img">
+          <img src="./images/5.png" alt="" />
+        </section>
+      </section>
+      <section class="main-carousel-nav-buttons">
+        <button class="back">&lt;</button>
+        <button class="next">&gt;</button>
+      </section>
     </section>
 
     <!-- section -->
@@ -75,8 +109,51 @@
           <a href="">Learn More ></a>
         </section>
       </section> -->
+
+      <!-- Owl Carousel Design -->
+    </section>
+    <section id="slide-1" class="slider-1 owl-carousel owl-theme">
+      <section>Section-1</section>
+      <section>Section-2</section>
+      <section>Section-3</section>
+      <section>Section-4</section>
+      <section>Section-5</section>
+      <section>Section-6</section>
+      <section>Section-7</section>
+      <section>Section-8</section>
+      <section>Section-9</section>
+      <section>Section-10</section>
     </section>
 
+    <section id="my-tab-section">
+      <ul>
+        <li><a href="#tab-1">Tab-1</a></li>
+        <li><a href="#tab-2">Tab-2</a></li>
+        <li><a href="#tab-3">Tab-3</a></li>
+        <li><a href="#tab-4">Tab-4</a></li>
+      </ul>
+      <section id="tab-1">
+        section 2 text Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Culpa nemo possimus provident perspiciatis, asperiores vero
+        reprehenderit nesciunt quo commodi impedit nisi aliquid accusamus esse
+        sed obcaecati blanditiis rem? Sit, laboriosam.
+      </section>
+      <section id="tab-2">
+        section 2 text Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Culpa nemo possimus provident perspiciatis, asperiores vero
+        reprehenderit nesciunt
+      </section>
+      <section id="tab-3">
+        section 3 text Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Culpa nemo possodi impedit nisi aliquid accusamus esse sed obcaecati
+        blanditiis rem? Sit, laboriosam.
+      </section>
+      <section id="tab-4">
+        section 4 text perspiciatis, asperiores vero reprehenderit nesciunt quo
+        commodi impedit nisi aliquid accusamus esse sed obcaecati blanditiis
+        rem? Sit, laboriosam.
+      </section>
+    </section>
     <!-- position ==> static
       popup
       sub-menu
@@ -97,7 +174,19 @@
         Facere voluptatibus distinctio delectus veniam. Id, aliquam? Hic, sunt
       </section>
     </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./js/owl_carousel/dist/owl.carousel.min.js"></script>
+    <script src="./js/sliders.js"></script>
   </body>
 </html>
 
 <!-- How to make the content inside the boxes to center? -->
+
+<!-- 1 add jquery file -->
+<!-- 2 add Owl Carousel js file -->
+<!-- 3 add own js file -->
+
+<!-- rules using jquery ui
+    js file of jquery ui must be added after jquery
+ -->
